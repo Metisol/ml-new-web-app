@@ -5,7 +5,7 @@ import joblib
 import pandas as pd
 from pydantic import BaseModel
 
-# ✅ Load the trained model
+#  Load the trained model
 try:
     model = joblib.load("model.pkl")
     print("Model loaded successfully")
@@ -13,13 +13,13 @@ except Exception as e:
     print(f"Error loading model: {e}")
     raise RuntimeError("Failed to load the model")
 
-# ✅ Initialize FastAPI
+#  Initialize FastAPI
 app = FastAPI()
 
-# ✅ Serve static files (Frontend UI)
+#  Serve static files (Frontend UI)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# ✅ Redirect root URL ("/") to `index.html`
+#  Redirect root URL ("/") to `index.html`
 @app.get("/")
 def read_root():
     return FileResponse("static/index.html")
