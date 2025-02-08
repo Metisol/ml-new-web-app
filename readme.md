@@ -72,11 +72,4 @@ The goal is to build a model that can accurately predict election results based 
    uvicorn app:main --reload
    ```
 
-## Future Improvements
-- Incorporate real-time polling data for dynamic predictions.
-- Optimize the model using hyperparameter tuning.
-- Expand dataset features for better generalization.
-
-## Contact
-For any inquiries or contributions, please reach out via GitHub or email.
 
