@@ -54,6 +54,7 @@ The goal is to build a model that can accurately predict election results based 
 - **Deployment Strategy:**
   - The model is saved using Joblib (`model.pkl`).
   - A FastAPI-based API is used to make predictions.
+  - https://ml-new-web-app.onrender.com
 - **How to Run the API:**
   - Load the trained model.
   - Define an API endpoint to receive input data.
