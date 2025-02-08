@@ -1,4 +1,4 @@
-# Election Prediction Project
+# 🗳️ Election Prediction Project
 
 ## Project Overview
 This project predicts election outcomes using machine learning techniques. It utilizes historical election data and various demographic features to train a predictive model.
