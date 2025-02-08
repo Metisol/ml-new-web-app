@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election Win Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🗳️ Election Win Predictor</h1>
+        <p>Enter candidate details to predict whether they will **win or lose**.</p>
+
+        <form id="predictionForm">
+            <label>Age:</label>
+            <input type="number" id="age" required>
+
+            <label>Total Votes Received:</label>
+            <input type="number" id="total_votes" required>
+
+            <label>General Votes Received:</label>
+            <input type="number" id="general_votes" required>
+
+            <label>Postal Votes Received:</label>
+            <input type="number" id="postal_votes" required>
+
+            <label>Total Electors in Constituency:</label>
+            <input type="number" id="total_electors" required>
+
+            <label>Number of Criminal Cases:</label>
+            <input type="number" id="criminal_cases" required>
+
+            <label>Total Assets (₹):</label>
+            <input type="number" id="assets" required>
+
+            <label>Total Liabilities (₹):</label>
+            <input type="number" id="liabilities" required>
+
+            <label>Education Level:</label>
+            <select id="education">
+                <option value="0">No Education</option>
+                <option value="1">Primary</option>
+                <option value="2">Secondary</option>
+                <option value="3">Graduate</option>
+                <option value="4">Postgraduate</option>
+                <option value="5">Doctorate</option>
+            </select>
+
+            <label>Candidate Category:</label>
+            <select id="category">
+                <option value="0">General</option>
+                <option value="1">OBC</option>
+                <option value="2">SC</option>
+                <option value="3">ST</option>
+                <option value="4">Other</option>
+            </select>
+
+            <label>Gender:</label>
+            <select id="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+
+            <label>Party (Encoded Number):</label>
+            <input type="number" id="party" required>
+
+            <button type="button" onclick="predict()">Predict Election Outcome</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
