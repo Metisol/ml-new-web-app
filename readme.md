@@ -12,6 +12,22 @@ The goal is to build a model that can accurately predict election results based 
   - Handling missing values by dropping NaNs.
   - Encoding categorical variables using one-hot encoding.
   - Splitting the dataset into training and testing sets.
+ ## **Dataset Features**
+| **Feature**        | **Description** |
+|--------------------|---------------|
+| AGE               | Candidate's age |
+| TOTAL_VOTES       | Total votes received |
+| GENERAL_VOTES     | General category votes |
+| POSTAL_VOTES      | Postal votes received |
+| TOTAL_ELECTORS    | Total voters in constituency |
+| CRIMINAL_CASES    | Number of criminal cases |
+| ASSETS            | Candidate's total assets (₹) |
+| LIABILITIES       | Candidate's total liabilities (₹) |
+| EDUCATION         | Education level (Encoded) |
+| CATEGORY          | Candidate category (General, OBC, SC, etc.) |
+| GENDER           | Candidate gender (0=Male, 1=Female) |
+| PARTY            | Political party (Encoded number) |
+  
 
 ## Exploratory Data Analysis (EDA)
 - **Visualizations Used:**
